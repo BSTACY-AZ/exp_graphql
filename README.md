@@ -13,6 +13,7 @@ javaScript/GraphQL/Express
 3) Navigate to localhost:5500/GraphQL
 4) Use any of the following queries from the GraphiQL interface: 
 
+```
 query getRestaurants {
   restaurants {
     id
@@ -56,7 +57,7 @@ mutation editRestaurants($idd: Int = 1, $name: String = "OLDO") {
     description
   }
 }
-
+```
 # Roadmap
 In the future I would like to update the code for this project to: 
 1) Auto increment the id values. Initially Id values were not provided with the starter code so even after completing the coursework correctly any query leveraging an id would not execute correctly. I added id to the schema and each record accordingly but this is not an ideal solution. Each entry should ultimately have a unique id which is never re-used. 
